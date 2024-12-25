@@ -1,16 +1,14 @@
 
-import './App.css'
+
+import LearnPage from './landingPage/LearnPage'
+// src/main.tsx (or src/index.tsx)
+import './index.css'; // Make sure Tailwind CSS is imported
 
 function App() {
   
   return (
     <>
-      <div>
-      <h1 className=" text-4xl text-center text-blue-500">
-        Welcome to your Vite-powered React App
-      </h1>
-    
-      </div>
+      <LearnPage/>
     </>
   )
 }
