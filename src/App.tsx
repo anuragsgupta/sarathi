@@ -6,9 +6,9 @@ function App() {
   return (
     <>
       <div>
-      <p className="read-the-docs">
+      <h1 className=" text-4xl text-center text-blue-500">
         Welcome to your Vite-powered React App
-      </p>
+      </h1>
     
       </div>
     </>
