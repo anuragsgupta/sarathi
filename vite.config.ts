@@ -5,11 +5,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
-    base: '/',
-  }
-
-  if (command !== 'serve') {
-    config.base = '/sarathi/'
+    base: command === 'serve' ? '/' : '/sarathi/',
+    build: {
+      outDir: '../sarathi/dist',
+    },
   }
 
   return config
