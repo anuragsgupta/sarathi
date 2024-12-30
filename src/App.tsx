@@ -2,6 +2,8 @@
 
 import LearnPage from './components/LearnPage'
 // src/main.tsx (or src/index.tsx)
+// import React from 'react';
+
 import './index.css'; // Make sure Tailwind CSS is imported
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import LandingPage from './components/landingPage';
@@ -11,9 +13,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/sarathi/demo/" element={<LearnPage />} />
-        <Route path="/sarathi/" element={<LandingPage />} />
-        <Route path="/sarathi/roadmap/" element={<RoadmapDisplay />} />
+        <Route path="/demo/" element={<LearnPage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/roadmap/" element={<RoadmapDisplay />} />
       </Routes>
     </BrowserRouter>
   )

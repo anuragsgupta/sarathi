@@ -55,7 +55,7 @@ const RoadmapDisplay: React.FC = () => {
   const roadmapData = state?.roadmapData;
 
   if (!roadmapData) {
-    return <Navigate to="/sarathi/" replace />;
+    return <Navigate to="/" replace />;
   }
 
   const toggleModuleCompletion = (moduleIndex: number, e: React.MouseEvent) => {

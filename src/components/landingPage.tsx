@@ -1,5 +1,6 @@
 // src/pages/LandingPage.tsx
 
+// import React from 'react';
 
 const LandingPage = () => {
   return (
@@ -20,7 +21,7 @@ const LandingPage = () => {
           <div className="mt-8">
             <a
               href="#get-started"
-              onClick={() => window.location.href = '/sarathi/demo'}
+              onClick={() => window.location.href = '/demo'}
               className="inline-block bg-white text-blue-600 font-bold py-2 px-6 rounded-lg hover:bg-gray-100"
             >
               Get Started

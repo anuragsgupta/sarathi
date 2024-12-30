@@ -29,7 +29,7 @@ const MainContent: React.FC = () => {
 
       const roadmapData = await generateLearningRoadmap(inputValue, apiKey);
       console.log(roadmapData);
-      navigate("/sarathi/roadmap", { state: { roadmapData } });
+      navigate("/roadmap", { state: { roadmapData } });
     } catch (error: unknown) {
       console.error("Error generating roadmap:", error);
       if (error instanceof Error) {
